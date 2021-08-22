@@ -52,8 +52,19 @@ This kind of papers can be really useful in giving even better description for t
 
 So my take to this is very much that the older well established researchers should do everything they can to increase the value of the dataset citations, and meanwhile we who are in more precarious positions should consider playing this stupid game with the old rules as well as we can. 
 
+We often end up in a situation where we want to publish the data and our study separately, or possibly publish with the paper just a subset or somehow processed version. 
+
+Universal Dependencies [@ud] is a good example about a large project where individual sub-projects are located inside the main project. Everyone who contributes is within the authors of the whole dataset, but it is also possible to cite very exactly the individual treebanks as needed. 
+
 ## Dataset and code
+
+It is important to archive also the code, especially when it has been used to transform the dataset from an earlier dataset. 
 
 ## Who did author this thing?
 
-This…
+I think it's a good idea to have all names of everybody who did something with the dataset. This is not a place to be cheap on authorship. Maybe the most research project's leader can be the first or the last, but alphabetical order is also very good. I also like the idea that the roles and tasks would be fairly well described somewhere, so that people would have even more transparent way to show their skills and areas of experise. 
+
+## Ethics & Data statements
+
+In natural language processing research we see nowadays occasionally separate data statements associated with individual studies and datasets. The idea is to describe in detail what kind of population the dataset is based upon, and what can be the potential biases and risks in using it [@benderEtAl2018a]. in [@levow2021developing] we also see an example where the paper includes a section about ethical considerations, located between the Discussion and Conclusions, being an independent and important part of the study. This is an extremely good development, and somewhat distinct from FAIR, but very much connected to this approach if we truly care about how the data is created and used. There are numerous questions that only arise in specific contexts, which may necessitate the description of some issues for specific studies. For example, the use of speech recognition impacts all audio datasets in very specific ways, and also forces us to reconsider under which conditions these datasets can be made open. 
+

@@ -14,6 +14,10 @@ Are you aware of examples where one dataset is used, modified, and then redistri
 
 No matter what kind of research we do, we use some type of materials to do that. Are you planning, or did you already, to publish your dataset? Have you been suggesting to do so and leading this discussion? Have they been setting an example of how to do this?
 
+## Why would we want to track the use of a dataset?
+
+It is interesting to know who all have used the dataset and why. What are the benefits of this?
+
 ## Why does it make sense to say that old Public Domain data is 'easiest' to work with? What are the implications?
 
 I have argued that when we move onward from Public Domain data new questions arise very fast, and the whole data processing pipeline becomes much more complicated. Is this really the case?

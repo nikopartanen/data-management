@@ -76,6 +76,3 @@ All these ideas we have discussed in relation to FAIR are very good. I think tec
 
 But I do think that we really need to see a shift from creating new datasets to combining and reusing those that already exist. I may be blinded by my linguistics background, where I certainly do not see this happening. 
 
-## Ethics & Data statements
-
-In natural language processing research we see nowadays occasionally separate data statements associated with individual studies and datasets. The idea is to describe in detail what kind of population the dataset is based upon, and what can be the potential biases and risks in using it [@benderEtAl2018a]. We also see specific sections about the ethics in the articles, often before or after the conclusion. This is an extremely good development, and somewhat distinct from FAIR, but very much connected to this approach if we truly care about how the data is created and used. There are numerous questions that only arise in specific contexts, which may necessitate the description of some issues for specific studies. For example, the use of speech recognition impacts all audio datasets in very specific ways, and also forces us to reconsider under which conditions these datasets can be made open. 
