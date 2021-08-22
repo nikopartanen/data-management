@@ -1,4 +1,5 @@
 introduction
+slides
 instructors-background
 instructors-limitations
 questions

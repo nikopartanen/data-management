@@ -80,6 +80,6 @@ It can be a be really strong model to foster new research if the datasets create
 
 Mine too! But this is not really true, and we are all getting better in this continuously. And the system is built so that we can update our mistakes, if there are those, and create incrementally better materials and studies. The most common reason not to publish data is probably the fear that it is not good enough. 
 
-This is also why I want to emphasize the benefit of data sharing and publishing in further work that it allows. We can build on top of each others work, and make something larger than what we could ever do alone. I think we put at times too much weight on verification. Of course it is useful to be able to check what has been done in some study, but I also think we should be nice and merciful to one another, and try not to care about the mistakes we all inevitably do. 
+This is also why I want to emphasize the benefit of data sharing and publishing in further work that it allows. We can build on top of each others work, and make something larger than what we could ever do alone. I think we put at times too much weight on verification. Of course it is useful to be able to check what has been done in some study, but I also think we should be nice and merciful to one another, and try not to focus too heavily on the mistakes we all inevitably do.
 
 Luckily this kind of attitude seems to be relatively rare, and my experiences in publishing linguistic data and using the data of others has been very positive. I'm confident the same will be true also for you. 
