@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 6 Before we start | Dataset creation, publishing and maintenance</title>
+<meta name="author" content="Niko Partanen">
+<meta name="description" content="Let’s imagine we are in the situation we need a dataset for our research. There are various things we have to do before we should get too far with it.  6.1 Data management plan It is becoming more...">
+<meta name="generator" content="bookdown 0.23 with bs4_book()">
+<meta property="og:title" content="Chapter 6 Before we start | Dataset creation, publishing and maintenance">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Let’s imagine we are in the situation we need a dataset for our research. There are various things we have to do before we should get too far with it.  6.1 Data management plan It is becoming more...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 6 Before we start | Dataset creation, publishing and maintenance">
+<meta name="twitter:description" content="Let’s imagine we are in the situation we need a dataset for our research. There are various things we have to do before we should get too far with it.  6.1 Data management plan It is becoming more...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="bs4_style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Dataset creation, publishing and maintenance</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="questions.html"><span class="header-section-number">2</span> Questions</a></li>
+<li><a class="" href="what-is-research-data.html"><span class="header-section-number">3</span> What is research data?</a></li>
+<li><a class="" href="fair-principles.html"><span class="header-section-number">4</span> FAIR principles</a></li>
+<li><a class="" href="open-access.html"><span class="header-section-number">5</span> Open access</a></li>
+<li><a class="active" href="before-we-start.html"><span class="header-section-number">6</span> Before we start</a></li>
+<li><a class="" href="creating-a-dataset.html"><span class="header-section-number">7</span> Creating a dataset</a></li>
+<li><a class="" href="publishing-a-dataset.html"><span class="header-section-number">8</span> Publishing a dataset</a></li>
+<li><a class="" href="maintaining-a-dataset.html"><span class="header-section-number">9</span> Maintaining a dataset</a></li>
+<li><a class="" href="visibility.html"><span class="header-section-number">10</span> Visibility</a></li>
+<li><a class="" href="ok-but-my-data-sucks.html"><span class="header-section-number">11</span> Ok, but my data sucks! 😭</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/nikopartanen/data-management">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="before-we-start" class="section level1" number="6">
+<h1>
+<span class="header-section-number">6</span> Before we start<a class="anchor" aria-label="anchor" href="#before-we-start"><i class="fas fa-link"></i></a>
+</h1>
+<p>Let’s imagine we are in the situation we need a dataset for our research. There are various things we have to do before we should get too far with it.</p>
+<div id="data-management-plan" class="section level2" number="6.1">
+<h2>
+<span class="header-section-number">6.1</span> Data management plan<a class="anchor" aria-label="anchor" href="#data-management-plan"><i class="fas fa-link"></i></a>
+</h2>
+<p>It is becoming more common that funders demand a data management plan, either in application or soon after it. It’s a document that specifies how the data is handled during and after the project. Thereby it connects to both what data is used, how it is processed, and how it is stored afterwards. It usually includes (adapted from Aalto University’s <a href="https://www.aalto.fi/en/services/data-management-plan-dmp">Data Management Plan page</a>:</p>
+<ul>
+<li>How the data is collected or what existing data is used</li>
+<li>How the data will be stored and processed by the team</li>
+<li>How the ownership and user rights go</li>
+<li>Whether the data will be open, and no matter if open or closed, by which conditions and licenses</li>
+<li>How the research ethics and information security are taken into account</li>
+<li>What are the costs of data management, how much time it needs?</li>
+</ul>
+<p>It’s also often emphasized that the data management plan should live along the project, and be updated when something new is understood better. Actually, it is probably a good idea to version them and somehow document what kind of changes you have introduced along the project. This will help you doing it the next time as well.</p>
+</div>
+<div id="thinking-of-publishing-starts-here" class="section level2" number="6.2">
+<h2>
+<span class="header-section-number">6.2</span> Thinking of publishing starts here<a class="anchor" aria-label="anchor" href="#thinking-of-publishing-starts-here"><i class="fas fa-link"></i></a>
+</h2>
+<p>Where the data will be stored, and be available for further research, should be somehow specified in this point already, if possible. Some repositories may be able to give you very early information about the processes they demand for the data that they can take in. For example, archives may have very specific documentation they want, and some forms they demand. Some archives do have also a procedure where they give out a statement that they are willing to archive the data from your project.</p>
+<p>What you absolutely have to do is to make sure that the policy outlined by the archive and by your own organization are compatible by one another. Your organization, usually university, also probably has some recommendations or rules for your data management. These should be read closely and followed. But it is also very possible that for your own specific field the practices are still emerging.</p>
+<p>If you plan to publish the data openly somewhere, then you also have to think how the anonymization or pseudonymization are performed. Again, some data types, such as audio or video recordings, cannot be anonymized in a sensible manner.</p>
+</div>
+<div id="how-big-are-we-going" class="section level2" number="6.3">
+<h2>
+<span class="header-section-number">6.3</span> How big are we going?<a class="anchor" aria-label="anchor" href="#how-big-are-we-going"><i class="fas fa-link"></i></a>
+</h2>
+<p>Bit above in the data management plan we already discussed that it is important to estimate how much time the data management needs. This, at least in humanities, is often connected to how much it costs. Our data usually is not tied to very expensive equipment, and we often do rather qualitative analysis and annotation, so a lot tends to boil into how much time something takes.</p>
+<p>How large dataset you are creating is thereby really dependent from how big your team is. It’s easy to see what this means when you are working alone! If you have to manage and publish a huge database, and also do your research, you may find yourself from a pretty tight spot. This is one reason why we will discuss quite thoroughly the benefits of trying to use the existing datasets. You simply have less to do with data management, and can emphasize further work on the materials and your own research.</p>
+<p>When there is a team working with the dataset things get different. With several specialists who know the data type, content and best practices, we can do very impressive new datasets in reasonable time, which still often means years. We have thereby had plenty of research projects that create new datasets, and exclusively do that. The result of the project is a new corpus or resource.</p>
+<p>In this point I have grown little bit suspicious toward this approach. I think datasets that are not used in research may not always be entirely battle tested. And this is a problem. How can we know that the conventions of the dataset are actually useful, if nobody has seriously used it in any research? Was the sampling reasonable, and same question can be asked about tens of little details we have to decide. Still, I do admit that when we are speaking about really large datasets, large projects and teamwork is the way to go.</p>
+<p>And, as a final word of caution, usually a single PhD student should not be responsible for the project’s data management while they also do their PhD. This is a common recipe, but I think lots of alarms should start ringing under this arrangement. Generally in a project the data management should not be in hand one individual person, as it streches into everything we do with the data as a team, and should connect to everyone’s work. At the same time the practices should not only be dictated from above, but be discussed in detail, based on current experiences and tools available, with the entire team.</p>
+</div>
+<div id="how-narrow-are-we-staying" class="section level2" number="6.4">
+<h2>
+<span class="header-section-number">6.4</span> How narrow are we staying?<a class="anchor" aria-label="anchor" href="#how-narrow-are-we-staying"><i class="fas fa-link"></i></a>
+</h2>
+<p>Besides the size of the dataset, there is another question of breadth. Even a small data, if annotated for lots of detail, can become lots of work. At the same time some small datasets are really suitable for few individual studies. I would never say just to one, as replication and changing the angle certainly can always be done with real benefits, but it is true that some datasets are wider than others. For example, a general corpus of a language can suit countless of different studies, whereas a small corpus of specific pronounced words is already something that may have been created just for one specific purpose. These examples also have the relation that latter often could had been derived from the former.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="open-access.html"><span class="header-section-number">5</span> Open access</a></div>
+<div class="next"><a href="creating-a-dataset.html"><span class="header-section-number">7</span> Creating a dataset</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#before-we-start"><span class="header-section-number">6</span> Before we start</a></li>
+<li><a class="nav-link" href="#data-management-plan"><span class="header-section-number">6.1</span> Data management plan</a></li>
+<li><a class="nav-link" href="#thinking-of-publishing-starts-here"><span class="header-section-number">6.2</span> Thinking of publishing starts here</a></li>
+<li><a class="nav-link" href="#how-big-are-we-going"><span class="header-section-number">6.3</span> How big are we going?</a></li>
+<li><a class="nav-link" href="#how-narrow-are-we-staying"><span class="header-section-number">6.4</span> How narrow are we staying?</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/nikopartanen/data-management/blob/master/04-starting-a-dataset.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/nikopartanen/data-management/edit/master/04-starting-a-dataset.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Dataset creation, publishing and maintenance</strong>" was written by Niko Partanen. It was last built on 2021-08-22.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

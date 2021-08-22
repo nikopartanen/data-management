@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 7 Creating a dataset | Dataset creation, publishing and maintenance</title>
+<meta name="author" content="Niko Partanen">
+<meta name="description" content="In this step we have decided that we need to create a dataset. When we start to design it, I think one very important aspect to remember is: Collect only the data that you actually need! I...">
+<meta name="generator" content="bookdown 0.23 with bs4_book()">
+<meta property="og:title" content="Chapter 7 Creating a dataset | Dataset creation, publishing and maintenance">
+<meta property="og:type" content="book">
+<meta property="og:description" content="In this step we have decided that we need to create a dataset. When we start to design it, I think one very important aspect to remember is: Collect only the data that you actually need! I...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 7 Creating a dataset | Dataset creation, publishing and maintenance">
+<meta name="twitter:description" content="In this step we have decided that we need to create a dataset. When we start to design it, I think one very important aspect to remember is: Collect only the data that you actually need! I...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="bs4_style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Dataset creation, publishing and maintenance</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="questions.html"><span class="header-section-number">2</span> Questions</a></li>
+<li><a class="" href="what-is-research-data.html"><span class="header-section-number">3</span> What is research data?</a></li>
+<li><a class="" href="fair-principles.html"><span class="header-section-number">4</span> FAIR principles</a></li>
+<li><a class="" href="open-access.html"><span class="header-section-number">5</span> Open access</a></li>
+<li><a class="" href="before-we-start.html"><span class="header-section-number">6</span> Before we start</a></li>
+<li><a class="active" href="creating-a-dataset.html"><span class="header-section-number">7</span> Creating a dataset</a></li>
+<li><a class="" href="publishing-a-dataset.html"><span class="header-section-number">8</span> Publishing a dataset</a></li>
+<li><a class="" href="maintaining-a-dataset.html"><span class="header-section-number">9</span> Maintaining a dataset</a></li>
+<li><a class="" href="visibility.html"><span class="header-section-number">10</span> Visibility</a></li>
+<li><a class="" href="ok-but-my-data-sucks.html"><span class="header-section-number">11</span> Ok, but my data sucks! 😭</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/nikopartanen/data-management">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="creating-a-dataset" class="section level1" number="7">
+<h1>
+<span class="header-section-number">7</span> Creating a dataset<a class="anchor" aria-label="anchor" href="#creating-a-dataset"><i class="fas fa-link"></i></a>
+</h1>
+<p>In this step we have decided that we need to create a dataset. When we start to design it, I think one very important aspect to remember is:</p>
+<blockquote>
+<p>Collect only the data that you actually need!</p>
+</blockquote>
+<p>I understand that this is not very welcome idea for many researchers, and we have a long tradition of collecting, for example, interview data rather widely about topics where we do not really know what will be important, and thereby we end up with very broad and varying materials. This kind of data is in many ways very rich and important, but at the same time we have to be able to justify what kind of personal data we process, and we have to know very specifically what kind of data we have in our collections. If we focus into collecting and storing the data we actually need, this much easier, and this also makes the work much easier for us.</p>
+<p>At least in linguistics we have a very long tradition of collecting large amounts of spoken data, then transcribing it and annotating the texts with very specific conventions. I’ve been arguing toward a structure where we do record widely, but already in the transcription phase see pretty much effort to select what we transcribe so that the resulting corpus is as good and balanced as possible. For the annotations my strategy has also been to annotate only those sentences that contain the feature I’m interested about, and then annotate only those aspects of each observation that I truly need in my study. The data is available, and the other researchers are perfectly able to annotate whatever they need.</p>
+<div id="scenario-0-your-dataset-may-be-just-a-piece-of-code" class="section level2" number="7.1">
+<h2>
+<span class="header-section-number">7.1</span> Scenario 0: Your dataset may be just a piece of code<a class="anchor" aria-label="anchor" href="#scenario-0-your-dataset-may-be-just-a-piece-of-code"><i class="fas fa-link"></i></a>
+</h2>
+<p>In many cases we can query a larger dataset through an API, or there are other specific download services. In these cases we do not necessarily have to store the dataset again anywhere, but it is very important to include the original query script or its documentation in your dataset.</p>
+<p>If it is not possible to redistribute data, but it is accessible for you through your institution’s access contracts or policies, then it could be a very fair and transparent decision not to share the data itself in any manner, but document in detail how you acquired the dataset through these services, and which version you used. Metadata level information just as filenames and page numbers could be used in this connection to further clarify what exactly belonged to the used resource. It will be a test for our infrastructure whether the same dataset can be received again in the future, but if we document these means well enough, I think we are already doing pretty decent work.</p>
+<p>Many data repositories are not really designed for this kind of use, but I believe this will be changing in the future when we have more experience and examples of how to do it.</p>
+</div>
+<div id="scenario-1-using-an-existing-dataset" class="section level2" number="7.2">
+<h2>
+<span class="header-section-number">7.2</span> Scenario 1: Using an existing dataset<a class="anchor" aria-label="anchor" href="#scenario-1-using-an-existing-dataset"><i class="fas fa-link"></i></a>
+</h2>
+<p>We can be very lucky, and a dataset that is very suitable for our purposes already exists. First we should spend considerable time to dig little bit deeper into it. Who has done it, and what kind of documentation there is? From where does this data actually come from?</p>
+<p>Even though the dataset would had been made already open, we still have to think bit more broader what all it contains. What kind of data can be made available has been a moving target for quite a long time already, and there are older and newer materials with quite different practices. It is also very possible that someone has licensed the dataset openly, but in reality it contains some copyrighted material for which no arrangements have been done. It is very common that these practices are not very clear to anyone, and even the original authors may not be really aware of who actually has what kind of rights. It is a fairly good excuse if you used materials someone else has already licensed, and where everything seemed to be ok, but this doesn’t remove our responsibility from taking these things into account either.</p>
+<p>Again, we have to ask how the dataset is licensed? The main difference here is whether we can just take the entire material and transform it into something that is suitable for us, and redistribute that version with our study, or are there some limitations that specifically follow from the license.</p>
+</div>
+<div id="scenario-2-we-collect-some-new-data" class="section level2" number="7.3">
+<h2>
+<span class="header-section-number">7.3</span> Scenario 2: We collect some new data<a class="anchor" aria-label="anchor" href="#scenario-2-we-collect-some-new-data"><i class="fas fa-link"></i></a>
+</h2>
+<p>One very good practice is to run a tiny pilot. Let’s say you want to collect a survey. It is useful to get few filled examples, and already with those do put the answers to the database or whatever structure you want to use in your research. After you have done this, start to sketch the analytical code you are going to use. Have a minimal working example that shows you actually can get from this setup the type of structure or observation that you will analyse in the end.</p>
+<p>Testing and planning is particularly important if you are going to invest lots of time to the data collection, or if you are going to bug other people and spend their time too. I guess if we are just wasting our own time then we can do what we like and learn from our mistakes, but also here the normal course of action would be that we get enough advices and guidance from our supervisors and collaborators that we don’t screw this up too much.</p>
+<p>Currently one of the most important delineations here is whether the data we collect or work with contain sensitive data. This is a special category of personal information.</p>
+</div>
+<div id="organizations-are-our-friends" class="section level2" number="7.4">
+<h2>
+<span class="header-section-number">7.4</span> Organizations are our friends<a class="anchor" aria-label="anchor" href="#organizations-are-our-friends"><i class="fas fa-link"></i></a>
+</h2>
+<p>It’s usually a very good situation if the the data we use is released or approved by some more recognized organization. <a href="https://www.fsd.tuni.fi/en/">Finnish Social Science Data Archive</a> is a good example. As the researchers cannot update material there all by themselves, it is bound to be curated in various ways. The National Library of Finland is another good example. They have plenty of openly available material in their <a href="https://digi.kansalliskirjasto.fi/etusivu?set_language=en">Digi-service</a>, and much is explicitly marked as Public Domain. The user still has the responsibility for reuse they do, but the fact that an organization like this has made the consideration about this already does put our reuse already at firmer steps.</p>
+<p>Organizations are also important for us when the datasets are processed otherwise. More complicated the project, more ambitious and larger the intended dataset, more important it is that everything is led by competent professionals with plenty of experience in this, and that the affiliations and institutional roles are clear. In really large projects the responsibility should be at pretty high levels on the ladder. Not so much because of the merit, which I think we should share liberally to everyone who has contributed even little, but because of the security and reliability larger organizations bring.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="before-we-start.html"><span class="header-section-number">6</span> Before we start</a></div>
+<div class="next"><a href="publishing-a-dataset.html"><span class="header-section-number">8</span> Publishing a dataset</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#creating-a-dataset"><span class="header-section-number">7</span> Creating a dataset</a></li>
+<li><a class="nav-link" href="#scenario-0-your-dataset-may-be-just-a-piece-of-code"><span class="header-section-number">7.1</span> Scenario 0: Your dataset may be just a piece of code</a></li>
+<li><a class="nav-link" href="#scenario-1-using-an-existing-dataset"><span class="header-section-number">7.2</span> Scenario 1: Using an existing dataset</a></li>
+<li><a class="nav-link" href="#scenario-2-we-collect-some-new-data"><span class="header-section-number">7.3</span> Scenario 2: We collect some new data</a></li>
+<li><a class="nav-link" href="#organizations-are-our-friends"><span class="header-section-number">7.4</span> Organizations are our friends</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/nikopartanen/data-management/blob/master/05-creating-a-dataset.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/nikopartanen/data-management/edit/master/05-creating-a-dataset.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Dataset creation, publishing and maintenance</strong>" was written by Niko Partanen. It was last built on 2021-08-22.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

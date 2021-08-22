@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 8 Keeping a changelog | Dataset creation, publishing and maintenance</title>
+<meta name="author" content="Niko Partanen">
+<meta name="description" content="When we update the resource in any way, however, there should be some changelog. This means a simple listing of what kind of changes have been done between the versions. Here is an example of...">
+<meta name="generator" content="bookdown 0.23 with bs4_book()">
+<meta property="og:title" content="Chapter 8 Keeping a changelog | Dataset creation, publishing and maintenance">
+<meta property="og:type" content="book">
+<meta property="og:description" content="When we update the resource in any way, however, there should be some changelog. This means a simple listing of what kind of changes have been done between the versions. Here is an example of...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 8 Keeping a changelog | Dataset creation, publishing and maintenance">
+<meta name="twitter:description" content="When we update the resource in any way, however, there should be some changelog. This means a simple listing of what kind of changes have been done between the versions. Here is an example of...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="bs4_style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Dataset creation, publishing and maintenance</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="questions.html"><span class="header-section-number">2</span> Questions</a></li>
+<li><a class="" href="fair-principles.html"><span class="header-section-number">3</span> FAIR principles</a></li>
+<li><a class="" href="starting-a-dataset.html"><span class="header-section-number">4</span> Starting a dataset</a></li>
+<li><a class="" href="creating-a-dataset.html"><span class="header-section-number">5</span> Creating a dataset</a></li>
+<li><a class="" href="publishing-a-dataset.html"><span class="header-section-number">6</span> Publishing a dataset</a></li>
+<li><a class="" href="maintenance.html"><span class="header-section-number">7</span> Maintenance</a></li>
+<li><a class="active" href="keeping-a-changelog.html"><span class="header-section-number">8</span> Keeping a changelog</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="keeping-a-changelog" class="section level1" number="8">
+<h1>
+<span class="header-section-number">8</span> Keeping a changelog<a class="anchor" aria-label="anchor" href="#keeping-a-changelog"><i class="fas fa-link"></i></a>
+</h1>
+<p>When we update the resource in any way, however, there should be some changelog. This means a simple listing of what kind of changes have been done between the versions. Here is an example of changelog of <a href="https://github.com/UniversalDependencies/UD_Komi_Zyrian-Lattice/">Zyrian Komi treebank</a> curated by me. It is arguably not the best changelog ever, but it is much better than none at all!</p>
+<ul>
+<li>2020-04-30
+<ul>
+<li>Auxiliary, feature and deprel documentation</li>
+<li>New sentences added from grammar Ӧнія коми кыв: морфология</li>
+</ul>
+</li>
+<li>2020-10-31
+<ul>
+<li>193 new sentences added from grammar Ӧнія коми кыв: морфология</li>
+<li>10 new parallel sentences added that are shared with <a href="https://github.com/UniversalDependencies/UD_Komi_Permyak-UH">Komi Permyak</a> treebank</li>
+</ul>
+</li>
+<li>2020-05-15
+<ul>
+<li>Parallel sentences from Minjin shared with Komi_Permyak-UH.</li>
+<li>Expanding advmod:mmod, :lmod and :tmod.</li>
+<li>Punctuation was harmonized</li>
+<li>Various consistency improvements were made, especially in converbs</li>
+</ul>
+</li>
+<li>2019-10-11
+<ul>
+<li>Improvements in annotation consistency: Unmarked accusatives analysed as nominatives, aux:neg and acl:relcl new added relations. Individual lemmas corrected. Few missing tags added and POS classes reconsidered Gerunds classified as converbs. Features for PronTypes and Degree improved. New sentences added. Few typos corrected.</li>
+</ul>
+</li>
+<li>2019-04-30
+<ul>
+<li>Annotations harmonized</li>
+</ul>
+</li>
+<li>2018-11-01
+<ul>
+<li>README file updated and various corrections done</li>
+</ul>
+</li>
+<li>2018-10-18
+<ul>
+<li>New sentences from various sources added</li>
+</ul>
+</li>
+</ul>
+<p>And besides this we do have the version control of the whole project, starting from 2017. However, it is not particularly easy to get the glance of these changes just by looking into the version history, no matter how good and descriptive the commit messages.</p>
+<div id="tracking-the-use-of-dataset" class="section level2" number="8.1">
+<h2>
+<span class="header-section-number">8.1</span> Tracking the use of dataset<a class="anchor" aria-label="anchor" href="#tracking-the-use-of-dataset"><i class="fas fa-link"></i></a>
+</h2>
+<p>It’s a nice idea that we could follow somehow what all happens to the research data we publish. In practice this is not necessarily very easy. In principle, one could assume, that if data is findable, relevant and easy to use, once it is downloaded enough there will also be some use.</p>
+<p>We can track in services such as Google Scholar when some resource is cited, but in my experience this is not always very accurate. To know when the dataset has been used would important especially for merit: data citations are citations. Additionally if someone uses the datasets and creates something new, or modifies or extends it in some manner, then we should know about this so that we do not repeat the same work.</p>
+<p>Finnish Social Science Data Archive, for example, has in their terms and conditions that:</p>
+<blockquote>
+<p>The user shall notify the archive of all publications where she or he has used the data.</p>
+</blockquote>
+<p>This way the archive gets the information. In this case this is very useful, as the data has been moved into the archive’s repository. This is a very important question in general when we discuss research data: who is the actual maintainer? When we move the data into this kind of a larger and more established archive or repository, there are normally contracts signed that allow that organization to handle various processes in relation to the data. This often means that the archive can handle the data requests without asking the original authors, and collects and curates the material such as who have used it and which ways.</p>
+<p>There is a bit different model going on when we store the data openly into repositories such as Zenodo.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="maintenance.html"><span class="header-section-number">7</span> Maintenance</a></div>
+<div class="next"><a href="references.html">References</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#keeping-a-changelog"><span class="header-section-number">8</span> Keeping a changelog</a></li>
+<li><a class="nav-link" href="#tracking-the-use-of-dataset"><span class="header-section-number">8.1</span> Tracking the use of dataset</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/07-maintenance-and-visibility.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/07-maintenance-and-visibility.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Dataset creation, publishing and maintenance</strong>" was written by Niko Partanen. It was last built on 2021-08-19.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

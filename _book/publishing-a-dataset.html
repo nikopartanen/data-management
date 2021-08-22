@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 8 Publishing a dataset | Dataset creation, publishing and maintenance</title>
+<meta name="author" content="Niko Partanen">
+<meta name="description" content="Publishing a dataset differs in critical ways from publishing, for example, an article. The emphasis is less in publishing as such, but in creating a resource that is stored in an unchanged and...">
+<meta name="generator" content="bookdown 0.23 with bs4_book()">
+<meta property="og:title" content="Chapter 8 Publishing a dataset | Dataset creation, publishing and maintenance">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Publishing a dataset differs in critical ways from publishing, for example, an article. The emphasis is less in publishing as such, but in creating a resource that is stored in an unchanged and...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 8 Publishing a dataset | Dataset creation, publishing and maintenance">
+<meta name="twitter:description" content="Publishing a dataset differs in critical ways from publishing, for example, an article. The emphasis is less in publishing as such, but in creating a resource that is stored in an unchanged and...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="bs4_style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Dataset creation, publishing and maintenance</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="questions.html"><span class="header-section-number">2</span> Questions</a></li>
+<li><a class="" href="what-is-research-data.html"><span class="header-section-number">3</span> What is research data?</a></li>
+<li><a class="" href="fair-principles.html"><span class="header-section-number">4</span> FAIR principles</a></li>
+<li><a class="" href="open-access.html"><span class="header-section-number">5</span> Open access</a></li>
+<li><a class="" href="before-we-start.html"><span class="header-section-number">6</span> Before we start</a></li>
+<li><a class="" href="creating-a-dataset.html"><span class="header-section-number">7</span> Creating a dataset</a></li>
+<li><a class="active" href="publishing-a-dataset.html"><span class="header-section-number">8</span> Publishing a dataset</a></li>
+<li><a class="" href="maintaining-a-dataset.html"><span class="header-section-number">9</span> Maintaining a dataset</a></li>
+<li><a class="" href="visibility.html"><span class="header-section-number">10</span> Visibility</a></li>
+<li><a class="" href="ok-but-my-data-sucks.html"><span class="header-section-number">11</span> Ok, but my data sucks! 😭</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/nikopartanen/data-management">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="publishing-a-dataset" class="section level1" number="8">
+<h1>
+<span class="header-section-number">8</span> Publishing a dataset<a class="anchor" aria-label="anchor" href="#publishing-a-dataset"><i class="fas fa-link"></i></a>
+</h1>
+<p>Publishing a dataset differs in critical ways from publishing, for example, an article. The emphasis is less in publishing as such, but in creating a resource that is stored in an unchanged and well documented structure, and that is located in some organization where we can rely that it will be foundable and curated in the future.</p>
+<p>One way how different ways to publish a dataset differ lies in maintenance and responsibility. We’ll discuss this more later, but cover here some basics. There are several repositories where we can login, and upload our own data, and then also edit and curate it. There are certainly some validation mechanisms, sometimes less and sometimes more, but still the depositor kind of remains the curator and maintainer of the dataset.</p>
+<p>This differs greatly from more traditional model, where, for example, we would archive the materials into a physical archive, and in connection to this sign a contract that specifies very well how the responsibilities are in relation to the data now and later.</p>
+<p>I don’t think FAIR really addresses this question so much. Again, as discussed before, more firmly the data is in hold and curation of an actual organization that specifies to this kind of work, the better this is in many ways. If the dataset is entirely processed, uploaded and maintained by an individual researcher, then the user may have to spend more time to make certain everything is as should be expected.</p>
+<p>As we discussed before, you should have an idea where to publish the dataset already before you start to work with the data at all. This is already a part of the data management plan, and with many repositories it is important to communicate very early what kind of data you would like to store and what kind of documentation and forms the repository demands.</p>
+<div id="where-to-publish" class="section level2" number="8.1">
+<h2>
+<span class="header-section-number">8.1</span> Where to publish<a class="anchor" aria-label="anchor" href="#where-to-publish"><i class="fas fa-link"></i></a>
+</h2>
+<p>There are plenty of ways to publish research data. Only way to answer which solution suits the best your needs is to examine in detail the context where you are working. Are there some repositories that are widely used in your field? What are the solutions most used by your colleagues? In some cases a non-perfect solution that is similar to the standards of your fields may be the best.</p>
+<p>There may also be institutional constraints. For example, universities at times have their own data storage solutions, and they may want you to use them. University of Eastern Finland, for example, has this repository. At the same time there are also national solutions, such as Fairdata services in Finland, or CHECK services in Estonia. So you may want to prefer the solution of your university, at least if you plan to stay in the university, or the national system, if there are reasons to consider that infrastructure worth contributing into.</p>
+<p>In Finnish <a href="https://www.fairdata.fi/">Fairdata</a> infrastructure there is a constellation of several tools that can be used to store, describe and find research data. It also connects well to digital preservation system. There is certainly some redundancy in different countries and organizations building their own solutions, but still, this it’s better to have many possibilities than not any.</p>
+<p>Your funder may also have something to say about the chosen data storage platform. At the same time I think it is still relatively common that the funders are not very explicit about this. They want the data management plan, which shows you have thought about these things, but it seems there is still some space for different solutions.</p>
+</div>
+<div id="zenodo" class="section level2" number="8.2">
+<h2>
+<span class="header-section-number">8.2</span> Zenodo<a class="anchor" aria-label="anchor" href="#zenodo"><i class="fas fa-link"></i></a>
+</h2>
+<p>Let’s discuss first the easiest solution. Your data has no personal information, it is clearly licensed, so you can use and license it pretty much however you like. In this context Zenodo is a very good alternative. <a href="https://about.zenodo.org/policies/">Zenodo promises</a> to store your data at least 20 years.</p>
+<blockquote>
+<p>Items will be retained for the lifetime of the repository. This is currently the lifetime of the host laboratory CERN, which currently has an experimental programme defined for the next 20 years at least.</p>
+</blockquote>
+<p>The good thing is that <a href="https://home.cern/">CERN</a> is a pretty large project. Having it closing in 20 years is not really that realistic. Or if institutions of this magnitude are closing down, then we have already larger problems in our hands.</p>
+</div>
+<div id="more-complicated-situations" class="section level2" number="8.3">
+<h2>
+<span class="header-section-number">8.3</span> More complicated situations<a class="anchor" aria-label="anchor" href="#more-complicated-situations"><i class="fas fa-link"></i></a>
+</h2>
+<p>Let’s then discuss more complicated solutions. In many countries, I believe, there are local archives for various research datasets. In Finland we have <a href="https://www.fsd.tuni.fi/en/">Finnish Social Science Data Archive</a>. It is widely used in social sciences, and is a well known and valued archiving solution in Finnish context. The data they take in is normally anonymized, and they do not take multimedia.</p>
+<p><a href="https://www.kielipankki.fi/language-bank/">The Language Bank of Finland</a> is another organization that takes multimedia materials in Finland. Essentially they target the data in linguistics, so for other types of recorded material one has to look for other options. <a href="https://www.finlit.fi/en">Finnish Literature Society</a> is one organization in Finland that has plenty of folkloric materials in their archive, for example. <a href="https://musiikkiarkisto.fi/music-archive-finland.php">Music Archive Finland</a> would also match some types of data. <a href="https://www.sls.fi/en">Society of Swedish Literature in Finland</a> has a very good archive for materials in Swedish Finnish. <strong>At the moment in Finland the conditions to archive audio-visual material are extremely unclear.</strong> In Estonia there is excellent <a href="http://emsuka.eki.ee/">Archive of the Estonian Dialects and Finno-Ugric Languages</a> at the Institute of the Estonian Language. In Estonia there is also <a href="https://keeleressursid.ee/en/">Center of Estonian Language Resources</a>.</p>
+<p><a href="https://archive.mpi.nl/">The Language Archive</a> and <a href="http://elar.soas.ac.uk/">Endangered Languages Archive</a> (moving to Berlin soon from London, so back to EU) are two good and widely used solutions to store spoken language materials. They have good access control mechanisms. Interfaces, however, are only in English.</p>
+</div>
+<div id="possibilities-outside-europe" class="section level2" number="8.4">
+<h2>
+<span class="header-section-number">8.4</span> Possibilities outside Europe<a class="anchor" aria-label="anchor" href="#possibilities-outside-europe"><i class="fas fa-link"></i></a>
+</h2>
+<p>It’s also possible that your research data is particularly closely connected to some geographical region, and you may want to prefer repositories that are closer to those areas or offer the user interfaces in the local languages. <a href="https://ailla.utexas.org/">The Archive of the Indigenous Languages of Latin America</a>, for example, would easily come to mind if you work with endangered language materials from that area. <a href="https://www.paradisec.org.au/">Pacific and Regional Archive for Digital Sources in Endangered Cultures</a> is another very good example. Their interfaces exist, for example, in Tok Pisin and Indonesian. Recently also <a href="https://langarchive-th.org/">Archive of Languages and Cultures of Ethnic Groups of Thailand</a> was launched. When we work in the European academic context, these may be bit far away from what we usually can consider, but if we want to be less Euro-centric, there are options. <strong>Now, storing this kind of materials outside EU may be very complicated for GDPR, among other things, so don’t take this as a recommendation.</strong> But be aware about the plurality of possible practices, and I think there may be situations where we do international collaboration where there are various very valid reasons to store the research data also outside Europe.</p>
+<p>Another axis that impacts strongly to the available choices is the restriction level. Can you share the data online with an open license, or are there more granular access levels? If there are, then you have to store data to an organization that allows user identification and can negotiate the access granting.</p>
+</div>
+<div id="writing-a-data-paper" class="section level2" number="8.5">
+<h2>
+<span class="header-section-number">8.5</span> Writing a data paper<a class="anchor" aria-label="anchor" href="#writing-a-data-paper"><i class="fas fa-link"></i></a>
+</h2>
+<p>One common model is to publish an article at the same time with the publication of the dataset. Different journals in various fields accept nowadays data papers that do not contain new research as such, but describe the dataset. <a href="https://www.gbif.org/data-papers">Here</a> are some examples of such papers in biodiversity-related fields. In computational linguistics there is also a conference that publishes proceedings that describe datasets and tools, <a href="http://www.lrec-conf.org/">The International Conference on Language Resources and Evaluation</a>. In digital humanities <a href="http://dhnb.eu/">DHNB</a> is probably one well working venue.</p>
+<p>There is also a related practice that if the dataset is used very thoroughly and extensively in some study, where it is also described up to some detail, then the data creators may point that study as one of the items cited when using the dataset. This is not maybe that common, but there are numerous examples. For example, <a href="https://corpora.uni-hamburg.de/hzsk/de/islandora/object/spoken-corpus:phoncat">Phonoprosodic corpus of spoken Catalan (PhonCAT)</a>.</p>
+<p>This kind of papers can be really useful in giving even better description for the materials, and it also follows the FAIR principles that these studies are connected to the dataset. The most important reason why data papers are so popular is still that this way we can tie the citation of the dataset into a peer reviewed publication. At times I’ve also had discussions where it is argued that this is not a good development. We should cite the datasets and resources, and the citation into them should be valued as highly as publication citations. I absolutely agree with the idea and spirit: we should value datasets just like publications. But this is not the reality yet, I’m afraid. When we apply for jobs and positions peer reviewed articles do count differently than our datasets.</p>
+<p>So my take to this is very much that the older well established researchers should do everything they can to increase the value of the dataset citations, and meanwhile we who are in more precarious positions should consider playing this stupid game with the old rules as well as we can.</p>
+<p>We often end up in a situation where we want to publish the data and our study separately, or possibly publish with the paper just a subset or somehow processed version.</p>
+<p>Universal Dependencies<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Daniel Zeman et al., &lt;span&gt;“Universal Dependencies 2.8.1,”&lt;/span&gt; 2021, &lt;a href="http://hdl.handle.net/11234/1-3687" role="doc-biblioref"&gt;http://hdl.handle.net/11234/1-3687&lt;/a&gt;.&lt;/p&gt;'><sup>3</sup></a></span> is a good example about a large project where individual sub-projects are located inside the main project. Everyone who contributes is within the authors of the whole dataset, but it is also possible to cite very exactly the individual treebanks as needed.</p>
+</div>
+<div id="dataset-and-code" class="section level2" number="8.6">
+<h2>
+<span class="header-section-number">8.6</span> Dataset and code<a class="anchor" aria-label="anchor" href="#dataset-and-code"><i class="fas fa-link"></i></a>
+</h2>
+<p>It is important to archive also the code, especially when it has been used to transform the dataset from an earlier dataset.</p>
+</div>
+<div id="who-did-author-this-thing" class="section level2" number="8.7">
+<h2>
+<span class="header-section-number">8.7</span> Who did author this thing?<a class="anchor" aria-label="anchor" href="#who-did-author-this-thing"><i class="fas fa-link"></i></a>
+</h2>
+<p>I think it’s a good idea to have all names of everybody who did something with the dataset. This is not a place to be cheap on authorship. Maybe the most research project’s leader can be the first or the last, but alphabetical order is also very good. I also like the idea that the roles and tasks would be fairly well described somewhere, so that people would have even more transparent way to show their skills and areas of experise.</p>
+</div>
+<div id="ethics-data-statements" class="section level2" number="8.8">
+<h2>
+<span class="header-section-number">8.8</span> Ethics &amp; Data statements<a class="anchor" aria-label="anchor" href="#ethics-data-statements"><i class="fas fa-link"></i></a>
+</h2>
+<p>In natural language processing research we see nowadays occasionally separate data statements associated with individual studies and datasets. The idea is to describe in detail what kind of population the dataset is based upon, and what can be the potential biases and risks in using it.<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Emily M. Bender and Batya Friedman, &lt;span&gt;“Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science,”&lt;/span&gt; &lt;em&gt;Transactions of the Association for Computational Linguistics&lt;/em&gt; 6 (2018): 587–604, &lt;a href="https://doi.org/10.1162/tacl_a_00041" role="doc-biblioref"&gt;https://doi.org/10.1162/tacl_a_00041&lt;/a&gt;.&lt;/p&gt;'><sup>4</sup></a></span> in<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;Gina-Anne Levow, Emily P Ahn, and Emily M Bender, &lt;span&gt;“Developing a Shared Task for Speech Processing on Endangered Languages,”&lt;/span&gt; in &lt;em&gt;Proceedings of the Workshop on Computational Methods for Endangered Languages&lt;/em&gt;, vol. 1, 2021, 96–106.&lt;/p&gt;"><sup>5</sup></a></span> we also see an example where the paper includes a section about ethical considerations, located between the Discussion and Conclusions, being an independent and important part of the study. This is an extremely good development, and somewhat distinct from FAIR, but very much connected to this approach if we truly care about how the data is created and used. There are numerous questions that only arise in specific contexts, which may necessitate the description of some issues for specific studies. For example, the use of speech recognition impacts all audio datasets in very specific ways, and also forces us to reconsider under which conditions these datasets can be made open.</p>
+
+</div>
+</div>
+
+  <div class="chapter-nav">
+<div class="prev"><a href="creating-a-dataset.html"><span class="header-section-number">7</span> Creating a dataset</a></div>
+<div class="next"><a href="maintaining-a-dataset.html"><span class="header-section-number">9</span> Maintaining a dataset</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#publishing-a-dataset"><span class="header-section-number">8</span> Publishing a dataset</a></li>
+<li><a class="nav-link" href="#where-to-publish"><span class="header-section-number">8.1</span> Where to publish</a></li>
+<li><a class="nav-link" href="#zenodo"><span class="header-section-number">8.2</span> Zenodo</a></li>
+<li><a class="nav-link" href="#more-complicated-situations"><span class="header-section-number">8.3</span> More complicated situations</a></li>
+<li><a class="nav-link" href="#possibilities-outside-europe"><span class="header-section-number">8.4</span> Possibilities outside Europe</a></li>
+<li><a class="nav-link" href="#writing-a-data-paper"><span class="header-section-number">8.5</span> Writing a data paper</a></li>
+<li><a class="nav-link" href="#dataset-and-code"><span class="header-section-number">8.6</span> Dataset and code</a></li>
+<li><a class="nav-link" href="#who-did-author-this-thing"><span class="header-section-number">8.7</span> Who did author this thing?</a></li>
+<li><a class="nav-link" href="#ethics-data-statements"><span class="header-section-number">8.8</span> Ethics &amp; Data statements</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/nikopartanen/data-management/blob/master/06-publishing-a-dataset.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/nikopartanen/data-management/edit/master/06-publishing-a-dataset.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Dataset creation, publishing and maintenance</strong>" was written by Niko Partanen. It was last built on 2021-08-22.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
