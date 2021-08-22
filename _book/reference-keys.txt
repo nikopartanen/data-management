@@ -9,6 +9,7 @@ why-would-we-want-to-track-the-use-of-a-dataset
 why-does-it-make-sense-to-say-that-old-public-domain-data-is-easiest-to-work-with-what-are-the-implications
 do-we-have-a-balance-between-choosing-what-we-research-and-conducting-research-because-there-is-available-data-for-it
 openness-at-all-cost
+what-is-research-data
 fair-principles
 findable
 accessible
@@ -39,7 +40,9 @@ maintaining-a-dataset
 semantic-versioning
 keeping-a-changelog
 tracking-the-use-of-dataset
+visibility
 related-materials
 social-media
 mailing-lists
 recommend-it-to-your-students
+ok-but-my-data-sucks
