@@ -12,7 +12,7 @@ Are you aware of examples where one dataset is used, modified, and then redistri
 
 ## Do you plan to publish your data?
 
-No matter what kind of research we do, we use some type of materials to do that. Are you planning, or did you already, to publish your dataset? Have you been suggesting to do so and leading this discussion? Have they been setting an example of how to do this?
+No matter what kind of research we do, we use some type of materials to do that. Are you planning, or did you already, to publish your dataset? Have you been suggested to do so, and who is leading this discussion? Who have been setting examples of how to do this?
 
 ## Why would we want to track the use of a dataset?
 

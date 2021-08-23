@@ -22,6 +22,18 @@ This document accompanies the workshop *Dataset creation, publishing and mainten
 
 The goal is to discuss the current situation and best practices of research data management and publishing, with the practical portion where we go through with examples how to publish research data in Zenodo through GitHub integration. 
 
+These materials may be eventually turned into something that has more emphasis on linguistic work, as that's what I still know the best, but I'm also very happy to get comments that would help make it more suited for digital humanists and others. 
+
+## Slides
+
+The workshop taught based on these materials is currently split into three lecture modules, which are:
+
+1. [Introduction, FAIR & Open Access](https://docs.google.com/presentation/d/1ZRmQT3W_-KqQqy63MvjoY1TKBVwOrN4pX1tpErai-D0/edit?usp=sharing)
+2. [Zenodo, GitHub & different publishing methods](https://docs.google.com/presentation/d/1bpaIHR9PF2diJrhze9GZQojnyhCCGp9dzbj_iLDrLuU/edit?usp=sharing)
+3. [Creating and maintaining a dataset](https://docs.google.com/presentation/d/1KyJuUQcI_QNL4xzGLXelJn79xO34ThfeOJWRvHQHXKs/edit?usp=sharing)
+
+These slides are more less continuously living until the workshop, and will be saved when it is over. 
+
 ## Instructors background
 
 I'm a doctoral student in the University of Helsinki in the Department of Finnish, Finno-Ugrian and Scandinavian Studies. In my PhD my research topic is grammatical, geographic and sociolinguistic variation in Komi language. Komi is an endangered Uralic language spoken in Russia. It is distantly related to languages such as Finnish and Estonian. I'm planning to defend my PhD in March / April 2022. This has been a moving window, but now it is time to close it. 

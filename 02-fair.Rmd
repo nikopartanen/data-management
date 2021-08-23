@@ -12,7 +12,7 @@ At times the principles are illustrated also as some type of a puzzle where the 
 
 <!--![Parland-von Essen et. al. 2016](https://d3i71xaburhd42.cloudfront.net/c252f96e782694cae4305af471de1762ca94c2eb/6-Figure2-1.png)-->
 
-![Parland-von Essen et. al. 2016](media/6-Figure2-1.png){width=50%}
+![@wilkinsonEtAl2016a](media/fair-principles.png){width=50%}
 
 ## Findable
 
