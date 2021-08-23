@@ -1,7 +1,7 @@
 --- 
 title: "Dataset creation, publishing and maintenance"
 author: "Niko Partanen"
-date: "2021-08-22"
+date: "2021-08-23"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
