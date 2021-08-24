@@ -33,6 +33,7 @@ where-to-publish
 zenodo
 more-complicated-situations
 possibilities-outside-europe
+providing-access-to-the-data-yourself
 writing-a-data-paper
 dataset-and-code
 who-did-author-this-thing

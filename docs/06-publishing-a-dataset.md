@@ -42,6 +42,14 @@ It's also possible that your research data is particularly closely connected to 
 
 Another axis that impacts strongly to the available choices is the restriction level. Can you share the data online with an open license, or are there more granular access levels? If there are, then you have to store data to an organization that allows user identification and can negotiate the access granting. 
 
+## Providing access to the data yourself
+
+This is certainly an overkill for research groups, but in principle there are many ways to host an application on your server that allows accessing the materials. [Pushkinskiy Dom](http://pushkinskijdom.ru/) has a [Dataverse](https://dataverse.pushdom.ru/) installation through which they share their datasets. [Dataverse](https://dataverse.org/) is an open source research data repository software, which is used by various organizations and institutions around the world.
+
+[Access to Memory](https://www.accesstomemory.org/en/) is another open source application that be used in similar purposes, and it uses open-source digital preservation system [Archivematica](https://www.archivematica.org/en/) on the background. Installing these on server is really effortless, and documentation is good, but these are still not solutions that suit most of the situations we are discussing in this workshop. [Omeka](https://omeka.org/) is another open-source web publishing platform. 
+
+This kind of solution needs technical expertise and long term infrastructure, but it certainly is a possibility in some situations. 
+
 ## Writing a data paper
 
 One common model is to publish an article at the same time with the publication of the dataset. Different journals in various fields accept nowadays data papers that do not contain new research as such, but describe the dataset. [Here](https://www.gbif.org/data-papers) are some examples of such papers in biodiversity-related fields. In computational linguistics there is also a conference that publishes proceedings that describe datasets and tools, [The International Conference on Language Resources and Evaluation](http://www.lrec-conf.org/). In digital humanities [DHNB](http://dhnb.eu/) is probably one well working venue. 
